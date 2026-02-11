@@ -1,105 +1,76 @@
-# Identificaci-n-de-Ventas-Clim-ticas-por-Sector
-Identificación de “Ventas Climáticas” por Sector
+# Identificación de “Ventas Climáticas” por Sector
 
-Identificación de “Ventas Climáticas” por Sector
 Detección del pico de pánico y capitulación colectiva
-Descripción General
+
+## 📌Descripción General
 
 Este proyecto identifica ventas climáticas a nivel sectorial, es decir, el punto donde el pánico alcanza su máxima intensidad y la probabilidad de una caída adicional se reduce de forma significativa.
 
 La señal combina tres dimensiones críticas:
-
-Momentum extremo (RSI muy bajo),
-
-Volumen anómalo (capitulación),
-
-Riesgo estadístico elevado (kurtosis alta).
+- Momentum extremo (RSI muy bajo),
+- Volumen anómalo (capitulación),
+- Riesgo estadístico elevado (kurtosis alta).
 
 Cuando estas tres condiciones ocurren simultáneamente en varios tickers de un mismo sector, el mercado suele estar forzando ventas indiscriminadas, típicas de un suelo.
 
-Insight Clave
+## 📍Insight Clave
 
-¿En qué sector el mercado está vendiendo “a cualquier precio”?
+- ¿En qué sector el mercado está vendiendo “a cualquier precio”?
 
 Una venta climática se caracteriza por:
-
-agotamiento de vendedores,
-
-liquidaciones forzadas,
-
-emociones dominando decisiones.
+- agotamiento de vendedores,
+- liquidaciones forzadas,
+- emociones dominando decisiones.
 
 Paradójicamente, es ahí donde mejora el perfil riesgo/retorno para entradas contrarian bien gestionadas.
 
-Valor de Negocio
+## 💼Valor de Negocio
 
-Identifica oportunidades de compra por capitulación.
+- Identifica oportunidades de compra por capitulación.
 
 Permite entrar cuando:
-
-el consenso es totalmente negativo,
-
-el riesgo marginal empieza a disminuir.
+- el consenso es totalmente negativo,
+- el riesgo marginal empieza a disminuir.
 
 Muy útil para:
-
-estrategias contrarian,
-
-asignación táctica sectorial,
-
-detección de suelos de ciclo.
+- estrategias contrarian,
+- asignación táctica sectorial,
+- detección de suelos de ciclo.
 
 Complementa señales técnicas clásicas, evitando entradas prematuras.
 
 Fuentes de Datos
+- tickers
+- ticker_id
+- sector
+- precios_diarios
+- ticker_id
+- fecha
+- volume
+- indicadores_tecnicos
+- ticker_id
+- fecha
+- rsi_14
+- kurtosis
 
-tickers
-
-ticker_id
-
-sector
-
-precios_diarios
-
-ticker_id
-
-fecha
-
-volume
-
-indicadores_tecnicos
-
-ticker_id
-
-fecha
-
-rsi_14
-
-kurtosis
-
-Lógica del Análisis
+## 🧠Lógica del Análisis
 
 Se analizan los datos más recientes del mercado.
 
 Se filtran tickers que cumplan simultáneamente:
-
-RSI < 25 (sobreventa extrema),
-
-Kurtosis > 6 (movimientos extremos no normales).
+- RSI < 25 (sobreventa extrema),
+- Kurtosis > 6 (movimientos extremos no normales).
 
 Se agrupan los resultados por sector.
 
 Para cada sector se calcula:
-
-cantidad de tickers en pánico,
-
-RSI promedio,
-
-spike de volumen relativo.
+- cantidad de tickers en pánico,
+- RSI promedio,
+- spike de volumen relativo.
 
 Se consideran solo sectores con múltiples tickers afectados, evitando falsos positivos individuales.
 
-Interpretación de Resultados
+## 📊Interpretación de Resultados
 
 Muchos tickers + RSI extremadamente bajo + volumen explosivo
 → Capitulación sectorial.
@@ -111,34 +82,28 @@ RSI bajo sin volumen
 Volumen alto sin kurtosis
 → Rotación, no pánico.
 
-Casos de Uso
+## 🧩Casos de Uso
 
-Detección de suelos sectoriales.
+- Detección de suelos sectoriales.
+- Estrategias de reversión a la media.
+- Timing de entrada post-crisis.
+- Análisis de stress de mercado.
+- Complemento a análisis macro y de sentimiento.
 
-Estrategias de reversión a la media.
+## 🚀Posibles Extensiones
 
-Timing de entrada post-crisis.
+- Confirmar con recuperación del RSI en días posteriores.
+- Analizar retornos a 5 y 10 días post-señal.
+- Combinar con divergencias de volumen.
+- Integrar con señales de “Iceberg” institucional.
+- Ajustar umbrales por régimen de volatilidad.
 
-Análisis de stress de mercado.
-
-Complemento a análisis macro y de sentimiento.
-
-Posibles Extensiones
-
-Confirmar con recuperación del RSI en días posteriores.
-
-Analizar retornos a 5 y 10 días post-señal.
-
-Combinar con divergencias de volumen.
-
-Integrar con señales de “Iceberg” institucional.
-
-Ajustar umbrales por régimen de volatilidad.
-
-Nota Final
+## ✒️Nota Final
 
 El mercado no cae en silencio.
 Cae gritando, con volumen, extremos y miedo.
 
+## 👤Autora
+Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
 Este insight no busca comprar barato.
 Busca comprar cuando ya no queda nadie más vendiendo 📉🔥
