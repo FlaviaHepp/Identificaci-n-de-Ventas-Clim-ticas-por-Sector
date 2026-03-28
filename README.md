@@ -107,3 +107,61 @@ Cae gritando, con volumen, extremos y miedo.
 Flavia Hepp Proyecto de SQL aplicó un análisis de riesgo basado en eventos.
 Este insight no busca comprar barato.
 Busca comprar cuando ya no queda nadie más vendiendo 📉🔥
+
+****
+🔥 **Cuando todos venden… ¿es exactamente cuando deberías mirar para comprar?**
+
+Hay un punto en el mercado donde el miedo alcanza su máximo.
+
+No es una caída normal.
+Es **capitulación**.
+
+---
+
+📊 En este análisis detecté sectores donde ocurre lo siguiente al mismo tiempo:
+
+👉 **RSI extremadamente bajo (<25)**
+👉 **Volumen muy alto (pico de actividad)**
+👉 **Kurtosis elevada (movimientos extremos)**
+
+---
+
+⚠️ ¿Qué significa esta combinación?
+
+* Venta masiva
+* Pánico generalizado
+* Movimientos no lineales
+
+💡 En otras palabras:
+👉 El mercado está “forzando” ventas.
+
+---
+
+🧠 Pero acá está lo interesante:
+
+Cuando todos los indicadores apuntan a extremo…
+muchas veces estamos cerca de un **piso**.
+
+---
+
+🚨 Insight clave:
+**Las mejores oportunidades no aparecen cuando el mercado está tranquilo…
+aparecen cuando el miedo es máximo.**
+
+---
+
+🔍 ¿Qué permite este análisis?
+
+✔️ Detectar eventos de capitulación sectorial
+✔️ Identificar posibles puntos de reversión
+✔️ Encontrar oportunidades contrarian
+
+---
+
+📉 Porque en trading, el edge muchas veces está en hacer lo contrario…
+pero con datos que lo respalden.
+
+---
+
+#Quant #Trading #DataScience #Contrarian #MarketPanic #RSI #RiskManagement #Finanzas
+
